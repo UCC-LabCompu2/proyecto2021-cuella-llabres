@@ -1,0 +1,110 @@
+#Titulo_principal {
+    color: black;
+    font-family: "Times New Roman";
+    font-size: 50px;
+    text-align: center;
+}
+
+#datos {
+    font-family: "Times New Roman";
+    font-size: 2em;
+}
+
+#contactos {
+    font-family: "Times New Roman";
+    font-size: 2em;
+}
+
+#Test {
+    font-family: "Times New Roman";
+    font-size: 2em;
+}
+
+#noticia{
+    font-size: 1.5em;
+    font-family: "Times New Roman";
+}
+
+#historia{
+    font-size: 1.5em;
+    font-family: "Times New Roman";
+}
+
+#experiencia{
+    font-size: 1.5em;
+    font-family: "Times New Roman";
+}
+
+#hospitales{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+#clinicas{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+#laboratorios{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+#postas{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+#sintomas{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+#prevencion{
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+body{
+    text-align: center;
+    background-color: lightblue;
+}
+
+.header{
+    padding: 3px;
+    border-radius: 10px;
+    color: lightblue;
+}
+
+.menu{
+    background-color: #3b3b3b;
+    font-family: 'Times New Roman', cursive;
+    border-radius: 10px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: white;
+    display: block;
+    padding: 15px 57.5px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    background-color: #42B881;
+    border-radius: 10px;
+}
+
+.agrupar{
+    width: 1100px;
+    border: 1px solid black;
+    margin: 0px auto;
+    padding: 40px;
+    border-radius: 10px;
+
+}
