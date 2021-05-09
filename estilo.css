@@ -26,8 +26,8 @@ body{
 }
 
 .menu{
-    background-color: #3b3b3b;
-    font-family: 'Times New Roman', cursive;
+    background-color: gray;
+    font-family: 'Fredoka One', cursive;
     border-radius: 10px;
 }
 .menu ul {
@@ -48,7 +48,6 @@ body{
     background-color: #42B881;
     border-radius: 10px;
 }
-
 .agrupar{
     width: 1100px;
     border: 1px solid black;
@@ -59,4 +58,8 @@ body{
 }
 .imagen{
     float: bottom;
+}
+
+nav{
+    border: 1px solid black;
 }
