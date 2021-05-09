@@ -1,73 +1,22 @@
-#Titulo_principal {
+h1{
+    font-family: 'Black Han Sans', sans-serif;
     color: black;
-    font-family: "Times New Roman";
-    font-size: 50px;
     text-align: center;
-}
+    font-size: 90px;
 
-#datos {
-    font-family: "Times New Roman";
-    font-size: 2em;
 }
-
-#contactos {
-    font-family: "Times New Roman";
-    font-size: 2em;
-}
-
-#Test {
-    font-family: "Times New Roman";
-    font-size: 2em;
-}
-
-#noticia{
-    font-size: 1.5em;
-    font-family: "Times New Roman";
-}
-
-#historia{
-    font-size: 1.5em;
-    font-family: "Times New Roman";
-}
-
-#experiencia{
-    font-size: 1.5em;
-    font-family: "Times New Roman";
-}
-
-#hospitales{
-    font-family: "Times New Roman";
-    font-size: 1.5em;
-}
-
-#clinicas{
-    font-family: "Times New Roman";
-    font-size: 1.5em;
-}
-
-#laboratorios{
-    font-family: "Times New Roman";
-    font-size: 1.5em;
-}
-
-#postas{
-    font-family: "Times New Roman";
-    font-size: 1.5em;
-}
-
-#sintomas{
-    font-family: "Times New Roman";
-    font-size: 1.5em;
-}
-
-#prevencion{
-    font-family: "Times New Roman";
-    font-size: 1.5em;
+h2{
+    font: bold xx-large sans-serif;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
 }
 
 body{
-    text-align: center;
+    text-align: left;
     background-color: lightblue;
+    font-family: "Times New Roman";
+    font-size: 1em;
 }
 
 .header{
@@ -107,4 +56,7 @@ body{
     padding: 40px;
     border-radius: 10px;
 
+}
+.imagen{
+    float: bottom;
 }
