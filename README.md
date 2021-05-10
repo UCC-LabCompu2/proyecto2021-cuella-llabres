@@ -34,7 +34,7 @@ CSS3
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [x] Todas las etiquetas deben estar correctamente cerradas
 - [x] Los ids de los elementos deben ser unívocos
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
+- [x] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
 Accesibilidad:
 - [x] Toda imagen debe tener su etiqueta alt
