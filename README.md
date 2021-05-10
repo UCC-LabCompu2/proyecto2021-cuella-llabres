@@ -1,5 +1,6 @@
 # proyecto2021
 Estructura del proyecto de Laboratorio de computacion - UCC - 2021
+Link de la pagina[CoronaData](https://ucc-labcompu2.github.io/proyecto2021-cuella-llabres/)
 
 ##Autores
 Leonardo Cuellar - Francisco Llabres
