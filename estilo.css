@@ -1,71 +1,115 @@
-h1{
+h1 {
     font-family: 'Black Han Sans', sans-serif;
     color: black;
     text-align: center;
     font-size: 90px;
 
 }
-h2{
+
+h2 {
     font: bold xx-large sans-serif;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     font-size: 40px;
 }
 
-body{
-    text-align: left;
-    background-color: lightblue;
-    font-family: "Times New Roman";
-    font-size: 1em;
+nav {
+    border: 1px solid black;
 }
 
-.header{
+body {
+    text-align: left;
+    background: linear-gradient(to bottom, lightcyan, lightblue);
+}
+
+.agrupar {
+    width: 1100px;
+    background: linear-gradient(to bottom, lightcyan, lightblue);
+    border: 1px solid black;
+    margin: 0px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.header {
+    background: linear-gradient(to bottom, lightcyan, lightblue);
     padding: 3px;
     border-radius: 10px;
-    color: lightblue;
 }
 
-.menu{
+.menu {
     background-color: gray;
     font-family: 'Fredoka One', cursive;
     border-radius: 10px;
 }
+
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.menu ul li{
+
+.menu ul li {
     display: inline-block;
 }
-.menu ul li a{
+
+.menu ul li a {
     color: white;
     display: block;
-    padding: 15px 57.5px;
+    padding: 15px 57px;
     text-decoration: none;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
     background-color: #42B881;
     border-radius: 10px;
 }
-.agrupar{
-    width: 1100px;
-    border: 1px solid black;
-    margin: 0px auto;
-    padding: 40px;
+
+.seccion {
+    margin: 20px;
+    width: 1000px;
+    margin: auto;
+}
+
+article {
+    border: 1px solid grey;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+img {
+    margin: auto;
+    padding: 15px;
+    display: block;
+    border-radius: 30px;
+}
+
+footer {
+    font-size: large;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: gray;
+    color: white;
     border-radius: 10px;
-
 }
 
-nav{
-    border: 1px solid black;
-}
-
-.imagen{
+.imagen {
     float: left;
 }
-.imagen2{
+
+.imagen2 {
     float: left;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#imagen1 {
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 200px;
 }

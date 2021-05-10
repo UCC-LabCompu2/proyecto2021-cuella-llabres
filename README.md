@@ -1,5 +1,15 @@
 # proyecto2021
-Estructura de Proyecto Lab de Compu II - 2021
+Estructura del proyecto de Laboratorio de computacion - UCC - 2021
+
+##Autores
+Leonardo Cuellar - Francisco Llabres
+
+##Contenido de la pagina
+Informacion sobre el Coronavirus y diferentes utilidades
+
+##Tecnologias usadas
+HTMl5
+CSS3
 
 ### Requisitos del Primer Parcial
 - [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
@@ -7,7 +17,7 @@ Estructura de Proyecto Lab de Compu II - 2021
 - [x] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
 - [x] Emplear al menos 3 etiquetas semánticas
 - [x] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
-- [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
+- [x] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [ ] Publicar la Web empleando GitHubPages
 - [x] La estructura de la página debe estar definida con ```<div></div>```
 - [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
@@ -26,7 +36,7 @@ Estructura de Proyecto Lab de Compu II - 2021
 - [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
 Accesibilidad:
-- [ ] Toda imagen debe tener su etiqueta alt
+- [x] Toda imagen debe tener su etiqueta alt
 - [ ] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
 - [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
 - [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
