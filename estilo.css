@@ -18,6 +18,7 @@ nav {
 }
 
 body {
+    font-family: 'Times New Roman', cursive;
     text-align: left;
     background: linear-gradient(to bottom, lightcyan, lightblue);
 }
@@ -26,7 +27,7 @@ body {
     width: 1100px;
     background: linear-gradient(to bottom, lightcyan, lightblue);
     border: 1px solid black;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
 }
@@ -68,7 +69,6 @@ body {
 .seccion {
     margin: 20px;
     width: 1000px;
-    margin: auto;
 }
 
 article {

@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta content="Leonardo Cuellar y Francisco Llabres" name="autor">
     <meta content="Informacion en general del covid y test rapido" name="descripcion">
     <meta content="covid, salud, prevencion" name="palabras claves">
-    <title>Title</title>
+    <title>Test</title>
+    <link  rel="icon"  href="Imagenes/favicon.png" type="image/png"/>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -16,8 +16,9 @@
 <header>
     <h1 id="Titulo_principal">CoronaData</h1>
 </header>
+<body>
 <div class="agrupar">
-    <body>
+
     <nav class="menu">
         <ul>
             <li><a href="index.html" id="index">Pagina principal</a></li>
@@ -32,7 +33,6 @@
                 <ul>
                     <li><input type="checkbox" id="Check1" name="Fiebre" value="Fiebre"> <label for="Check1"> ¿Tenes
                         fiebre?</label></li>
-                    </li>
                     <li><input type="checkbox" id="Check2" name="Escalofrios" value="Escalofrios"><label for="Check2">
                         ¿Tenes escalofrios?</label></li>
                     <li><input type="checkbox" id="Check3" name="Cansancio" value="Cansancio"><label for="Check3">
@@ -50,11 +50,13 @@
                     <li><input type="checkbox" id="Check9" name="Perdida" value="Perdida"><label for="Check9">¿Tenes
                         pérdida súbita del sentido del olfato o gusto </label></li>
                 </ul>
+                <input type="submit" value="Submit">
             </div>
         </article>
+        <canvas id="CANV">
+        </canvas>
         <article>
-            <p>
-            <h3>PREVENCION</h3></p>
+            <h3>PREVENCION</h3>
             <p>Para evitar la propagación de la COVID-19:</p>
             <ul>
                 <li>Lávate las manos con frecuencia. Usa agua y jabón o un desinfectante de manos a base de alcohol.
@@ -81,14 +83,12 @@
             </p>
         </article>
         <article>
-            <p>
-            <h3>TRATAMIENTO</h3></p>
-            <p>
-                Si se siente enfermo debe descansar, beber mucho líquido y comer alimentos nutritivos.
-                Permanezca en una habitación separada de los demás miembros de la familia y utilice un baño
-                exclusivamente para usted si es posible.
-                Limpie y desinfecte frecuentemente las superficies que toque.
-            </p>
+            <h3>TRATAMIENTO</h3>
+            Si se siente enfermo debe descansar, beber mucho líquido y comer alimentos nutritivos.
+            Permanezca en una habitación separada de los demás miembros de la familia y utilice un baño
+            exclusivamente para usted si es posible.
+            Limpie y desinfecte frecuentemente las superficies que toque.
+
             <p>
                 Todas las personas deben mantener un estilo de vida saludable en casa.
                 Lleve una dieta saludable, duerma, manténgase activo y establezca contacto social con los seres queridos
@@ -110,6 +110,7 @@
     <footer>
         Derechos reservados de - Leonardo Cuellar - Francisco Llabres - 2021.
     </footer>
-    </body>
+
 </div>
+</body>
 </html>

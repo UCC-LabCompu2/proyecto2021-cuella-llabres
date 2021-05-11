@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta content="Leonardo Cuellar y Francisco Llabres" name="autor">
     <meta content="Informacion en general del covid y test rapido" name="descripcion">
     <meta content="covid, salud, prevencion" name="palabras claves">
-    <title>Title</title>
+    <title>Datos</title>
+    <link  rel="icon"  href="Imagenes/favicon.png" type="image/png"/>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -16,8 +16,9 @@
 <header>
     <h1 id="Titulo_principal">CoronaData</h1>
 </header>
+<body>
 <div class="agrupar">
-    <body>
+
     <nav class="menu">
         <ul>
             <li><a href="index.html" id="index">Pagina principal</a></li>
@@ -25,10 +26,8 @@
             <li><a href="Contactos.html" id="contactos">Contactos</a></li>
         </ul>
     </nav>
-    <ul>
-        <!-- llenar con la informacion dnecesaria en cada punto -->
-        <article>
-            <li><h3 id="historia">Historia del Covid-19</h3></li>
+    <article>
+           <h3 id="historia">Historia del Covid-19</h3>
             <p>
                 En diciembre de 2019 fueron reportados una serie de casos de pacientes hospitalizados con una enfermedad
                 nueva caracterizada por neumonía e insuficiencia respiratoria, a causa de un nuevo coronavirus
@@ -66,9 +65,6 @@
                 caso primario. La tasa de contagios ha logrado disminuirse de 40% (previa al confinamiento) a 3,2% el 6
                 de abril.
             </p>
-            <canvas id="CANV" width="200" height="100" style="border:1px solid #d3d3d3;">
-
-            </canvas>
             <p>
                 La Sociedad Española de Medicina Intensiva, Crítica y Unidades Coronarias (SEMICYUC) ha realizado una
                 serie de acciones con el objetivo de reducir el
@@ -124,7 +120,7 @@
             </p>
         </article>
         <article>
-            <li><h3 id="noticia">Noticias de ultima hora</h3></li>
+            <h3 id="noticia">Noticias de ultima hora</h3>
             <p>puede ingresar a estas paginas para poder ver las noticias mas recientes</p>
             <p><a href="https://www.bbc.com/news/coronavirus">BBC NEW</a></p>
             <p><a href="https://www.nbcnews.com/health/coronavirus">NBCNEWS</a></p>
@@ -136,16 +132,7 @@
                 <a href="https://www.unicef.org/argentina/coronavirus?gclid=CjwKCAjwkN6EBhBNEiwADVfya-0Ny3fhFrgUECv0vBeUHLYHiLixpUM-orSUPrvvEiyyBvfaoLhMJxoCJS0QAvD_BwE">UNICEF</a>
             </p>
         </article>
-        <form>
-            <li><h3 id="experien">Experiencias</h3></li>
-            <leable for="exp">Agregeue su experiencia:</leable>
-            <textarea id="experiencia"></textarea>
-            <p>
-                <button type="button">Enviar experiencia</button>
-            </p>
-        </form>
 
-    </ul>
     <article>
         <h2>Mapa de Casos en Tiempo Real</h2>
         <div class="imagen"><img src="Imagenes/descarga.jpg" alt="Imagen del mapa de casos"></div>
@@ -162,6 +149,7 @@
     <footer>
         Derechos reservados de - Leonardo Cuellar - Francisco Llabres - 2021.
     </footer>
-    </body>
+
 </div>
+</body>
 </html>
