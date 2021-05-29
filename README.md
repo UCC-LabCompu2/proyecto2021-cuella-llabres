@@ -1,12 +1,12 @@
 # proyecto2021
-Estructura del proyecto de Laboratorio de computacion - UCC - 2021
-Link de la pagina[CoronaData](https://ucc-labcompu2.github.io/proyecto2021-cuella-llabres/)
+Estructura del proyecto de Laboratorio de computación - UCC - 2021
+Link de la página [CoronaData](https://ucc-labcompu2.github.io/proyecto2021-cuella-llabres/)
 
 ## Autores
 Leonardo Cuellar - Francisco Llabres
 
 ## Contenido de la pagina
-Informacion sobre el Coronavirus y diferentes utilidades
+Información sobre el Coronavirus y diferentes utilidades
 
 ## Tecnologias usadas
 HTMl5

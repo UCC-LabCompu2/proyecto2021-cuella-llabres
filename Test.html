@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="Leonardo Cuellar y Francisco Llabres" name="autor">
-    <meta content="Informacion en general del covid y test rapido" name="descripcion">
+    <meta content="Información en general del covid y test rapido" name="descripcion">
     <meta content="covid, salud, prevencion" name="palabras claves">
     <title>Test</title>
     <link rel="icon" href="Imagenes/favicon.png" type="image/png"/>
@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css" type="text/css">
+    <script type='text/javascript' src='misfunciones.js'></script>
 </head>
 <header>
     <h1 id="Titulo_principal">CoronaData</h1>
@@ -21,7 +22,7 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="index.html" id="index">Pagina principal</a></li>
+            <li><a href="index.html" id="index">Página principal</a></li>
             <li><a href="Datos.html" id="datos">Datos</a></li>
             <li><a href="Contactos.html" id="contactos">Contactos</a></li>
         </ul>
@@ -29,7 +30,7 @@
     <section class="seccion">
         <article>
             <div>
-                <h2>Test rapido</h2>
+                <h2>Test rápido</h2>
                 <ul>
                     <li><input type="checkbox" id="Check1" name="Fiebre" value="Fiebre"> <label for="Check1"> ¿Tenes
                         fiebre?</label></li>
@@ -53,10 +54,14 @@
                 <input type="submit" value="Enviar">
             </div>
         </article>
-        <canvas id="CANV">
+
+
+        <canvas id="canvas">
         </canvas>
+
+
         <article>
-            <h3>PREVENCION</h3>
+            <h3>PREVENCIÓN</h3>
             <p>Para evitar la propagación de la COVID-19:</p>
             <ul>
                 <li>Lávate las manos con frecuencia. Usa agua y jabón o un desinfectante de manos a base de alcohol.
@@ -78,7 +83,7 @@
                 distanciamiento físico y la higiene de manos.
                 Sigue las recomendaciones de los organismos de salud pública de tu zona.
             </p>
-            <p>Para mas informacion ingresar a <a
+            <p>Para mas información ingresar a <a
                     href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiq3sL90L3wAhUbIrkGHYPeCbMQz0AwDHoECAQQMQ&url=https%3A%2F%2Fwww.who.int%2Fes%2Femergencies%2Fdiseases%2Fnovel-coronavirus-2019%2Fadvice-for-public%2Fq-a-coronaviruses%23%3A~%3Atext%3Dprotegerme&usg=AOvVaw2jLQv1vjsn8V9DQh9_MX5-">OMS</a>
             </p>
         </article>
@@ -102,7 +107,7 @@
                 Hablar con personas en las que confíe, como amigos y familiares, le puede ayudar.
                 Si se siente abrumado, hable con un trabajador de la salud o un consejero.
             </p>
-            <p>Para mas informacion ingresar a <a
+            <p>Para mas información ingresar a <a
                     href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiq3sL90L3wAhUbIrkGHYPeCbMQz0AwDHoECAQQMQ&url=https%3A%2F%2Fwww.who.int%2Fes%2Femergencies%2Fdiseases%2Fnovel-coronavirus-2019%2Fadvice-for-public%2Fq-a-coronaviruses%23%3A~%3Atext%3Dprotegerme&usg=AOvVaw2jLQv1vjsn8V9DQh9_MX5-">OMS</a>
             </p>
         </article>
