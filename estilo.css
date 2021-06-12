@@ -124,8 +124,6 @@ input[type=submit] {
 }
 
 #canvas{
-    box-sizing:border-box;
-    float:left;
-    width:50%;
-    padding:10px;
+border:10px;
 }
+
