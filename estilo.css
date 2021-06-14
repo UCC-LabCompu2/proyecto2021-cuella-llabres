@@ -123,11 +123,12 @@ input[type=submit] {
     border-radius: 5px;
 }
 
-.canvas {
-    height:100px;
-    width: 100px;
-
-
-
+#micanvas {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 80%;
+    height: 90%;
+    background-color: lightblue;
 }
 
