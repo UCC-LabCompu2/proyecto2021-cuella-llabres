@@ -84,27 +84,24 @@
         </article>
         <article>
                 <h2>Test rápido</h2>
-                <ul>
-                    <li><input type="checkbox" id="Check1" name="button" value="Fiebre" onclick="check1()"> <label
-                            for="Check1"> ¿Tenes
-                        fiebre?</label></li>
-                    <li><input type="checkbox" id="Check2" name="button" value="Escalofrios"><label for="Check2">
-                        ¿Tenes escalofrios?</label></li>
-                    <li><input type="checkbox" id="Check3" name="button" value="Cansancio"><label for="Check3">
-                        ¿Tenes cansancio intenso?</label></li>
-                    <li><input type="checkbox" id="Check4" name="button" value="Dolor de garganta"><label
-                            for="Check4"> </label>¿Tenes dolor de garganta?
-                    <li><input type="checkbox" id="Check5" name="button" value="Tos"><label for="Check5"> ¿Tenes
-                        tos?</label></li>
-                    <li><input type="checkbox" id="Check6" name="button" value="Falta de aire"><label
-                            for="Check6">¿Tenes falta de aire? </label></li>
-                    <li><input type="checkbox" id="Check7" name="button" value="Dolor de cabeza"><label
-                            for="Check7">¿Tenes dolor de cabeza? </label></li>
-                    <li><input type="checkbox" id="Check8" name="button" value="varias"><label for="Check8"> ¿Tenes
-                        nauseas, vomitos o diarrea?</label></li>
-                    <li><input type="checkbox" id="Check9" name="button" value="Perdida"><label for="Check9">¿Tenes
-                        pérdida súbita del sentido del olfato o gusto? </label></li>
-                </ul>
+            <p>
+                Para esta parte te queremos ayudar con un pequeño test rápido que te ayudara a detectar tus chances de estar o no
+            contagiado por este virus.
+            </p>
+            <p>
+
+            </p>
+            <form>
+                <p>
+                    <label for="cantidad de sintomas"> Cantidad de síntomas</label> = <input id="cantidad de sintomas" type="text" name="sintomas">
+                </p>
+                <p>
+                    <label for="grados"> ¿Cuántos grados tienes de fiebre?</label> = <input id="grados" type="text" name="grados">
+                </p>
+                <button type="button" onclick="check1()">
+                    Resultado
+                </button>
+            </form>
             <div>
                 <canvas id="micanvas"></canvas>
             </div>
