@@ -1,17 +1,18 @@
 function check1() {
-    let canvas = document.getElementById("micanvas");
+    var myCanvas = document.getElementById("micanvas");
+    myCanvas.width = 700;
+    myCanvas.height = 700;
     var val = document.getElementById("cantidaddesintomas").value;
     var valorg = document.getElementById("grados").value;
-    var ctx = canvas.getContext("2d");
+    var ctx = myCanvas.getContext("2d");
 
+    if(valorg <= 0 || valorg >=50){
+        alert("Elija valores correctos de temperatura");
+    }
     if (val != 1 && val != 2 && val != 3 && val != 4 && val != 5 && val != 6 && val != 7 && val != 8 && val != 9) {
         alert("Solo se permiten números o numeros entre el 1 y el 9");
-        var myCanvas = document.getElementById("myCanvas");
-        myCanvas.width = 300;
-        myCanvas.height = 300;
-
-        var ctx = myCanvas.getContext("2d");
-
+    }
+    if (val>=1 && val<=9 && valorg>=1 && valorg <= 49) {
         function drawLine(ctx, startX, startY, endX, endY,color){
             ctx.save();
             ctx.strokeStyle = color;
@@ -32,8 +33,6 @@ function check1() {
         var myVinyls = {
             "Classical music": 5,
             "Alternative rock": 14,
-            "Pop": 20,
-            "Jazz": 12
         };
 
         var Barchart = function(options){
@@ -105,7 +104,7 @@ function check1() {
 
                 //draw legend
                 barIndex = 0;
-                var legend = document.querySelector("legend[for='myCanvas']");
+                var legend = document.querySelector("legend[for='micanvas']");
                 var ul = document.createElement("ul");
                 legend.append(ul);
                 for (categ in this.options.data){
@@ -123,7 +122,7 @@ function check1() {
 
         var myBarchart = new Barchart(
             {
-                canvas:myCanvas,
+                canvas:micanvas,
                 seriesName:"Vinyl records",
                 padding:20,
                 gridScale:5,
@@ -134,7 +133,7 @@ function check1() {
         );
         var myBarchart = new Barchart(
             {
-                canvas:myCanvas,
+                canvas:micanvas,
                 padding:10,
                 gridScale:5,
                 gridColor:"#eeeeee",
@@ -151,11 +150,7 @@ function check1() {
         this.ctx.fillText(this.options.seriesName, this.canvas.width/2,this.canvas.height);
         this.ctx.restore();
     }
-    if (val>=1 && val<=9) {
-        ctx.beginPath();
-        ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.draw();
-    }
 }
+
+
 
