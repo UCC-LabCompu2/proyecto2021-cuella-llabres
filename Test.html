@@ -83,40 +83,44 @@
             </p>
         </article>
         <article>
-                <h2>Test rápido</h2>
+            <h2>Test rápido</h2>
             <p>
-                Para esta parte te queremos ayudar con un pequeño test rápido que te ayudara a detectar tus chances de estar o no
-            contagiado por este virus.
+                Para esta parte te queremos ayudar con un pequeño test rápido que te ayudara a detectar tus chances de
+                estar o no
+                contagiado por este virus.
             </p>
             <p>
             <ul>
-                <li><input type="checkbox" id="Check1" name="button" value="Fiebre" onclick="check0()"> <label
-                        for="Check1"> ¿Tenes
-                    fiebre?</label></li>
-                <li><input type="checkbox" id="Check2" name="button" value="Escalofrios"><label for="Check2">
-                    ¿Tenes escalofrios?</label></li>
-                <li><input type="checkbox" id="Check3" name="button" value="Cansancio"><label for="Check3">
-                    ¿Tenes cansancio intenso?</label></li>
-                <li><input type="checkbox" id="Check4" name="button" value="Dolor de garganta"><label
-                        for="Check4"> </label>¿Tenes dolor de garganta?
-                <li><input type="checkbox" id="Check5" name="button" value="Tos"><label for="Check5"> ¿Tenes
-                    tos?</label></li>
-                <li><input type="checkbox" id="Check6" name="button" value="Falta de aire"><label
-                        for="Check6">¿Tenes falta de aire? </label></li>
-                <li><input type="checkbox" id="Check7" name="button" value="Dolor de cabeza"><label
-                        for="Check7">¿Tenes dolor de cabeza? </label></li>
-                <li><input type="checkbox" id="Check8" name="button" value="varias"><label for="Check8"> ¿Tenes
-                    nauseas, vomitos o diarrea?</label></li>
-                <li><input type="checkbox" id="Check9" name="button" value="Perdida"><label for="Check9">¿Tenes
-                    pérdida súbita del sentido del olfato o gusto? </label></li>
+                <h3>Sintomas mas comunes (riesgo moderado)</h3>
+                <li> Fiebre</li>
+                <li> Tos</li>
+                <li> Cansancio</li>
+                <h3>Sintomas menos comunes (riesgo leve)</h3>
+                <li>Molestias y dolores</li>
+                <li>Dolor de garganta</li>
+                <li>Diarrea</li>
+                <li>Conjuntivitis</li>
+                <li>Dolor de cabeza</li>
+                <li>Pérdida del sentido del olfato o del gusto</li>
+                <li>Erupciones cutáneas o pérdida del color en los dedos de las manos o de los pies</li>
+                <h3>Sintomas mas graves (riesgo alto y necesitan atención inmediata)</h3>
+                <li>Dificultad para respirar o sensación de falta de aire</li>
+                <li>Dolor o presión en el pecho</li>
+                <li> Incapacidad para hablar o moverse</li>
             </ul>
             </p>
             <form>
                 <p>
-                    <label for="cantidaddesintomas"> Cantidad de síntomas</label> = <input id="cantidaddesintomas" type="text" name="sintomas">
+                    <label for="cantidaddesintomasgraves"> Cantidad de síntomas graves</label> = <input
+                        id="cantidaddesintomasgraves" type="text" name="sintomas">
                 </p>
                 <p>
-                    <label for="grados"> ¿Cuántos grados tienes de fiebre?</label> = <input id="grados" type="text" name="grados">
+                    <label for="grados"> Cantidad de sintomas moderados</label> = <input id="grados" type="text"
+                                                                                            name="grados">
+                </p>
+                <p>
+                    <label for="sintl"> Cantidad de sintomas leves</label> = <input id="sintl" type="text"
+                                                                                         name="sintomasl">
                 </p>
                 <button type="button" onclick="check1()">
                     Resultado
