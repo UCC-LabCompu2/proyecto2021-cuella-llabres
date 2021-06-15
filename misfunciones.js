@@ -31,8 +31,8 @@ function check1() {
         }
 
         var myVinyls = {
-            "Classical music": 5,
-            "Alternative rock": 14,
+            "Síntomas": val,
+            "Fiebre": valorg,
         };
 
         var Barchart = function(options){
@@ -94,13 +94,13 @@ function check1() {
                 }
 
                 //drawing series name
-                this.ctx.save();
-                this.ctx.textBaseline="bottom";
-                this.ctx.textAlign="center";
-                this.ctx.fillStyle = "#000000";
-                this.ctx.font = "bold 14px Arial";
-                this.ctx.fillText(this.options.seriesName, this.canvas.width/2,this.canvas.height);
-                this.ctx.restore();
+                /* this.ctx.save();
+                 this.ctx.textBaseline="bottom";
+                 this.ctx.textAlign="center";
+                 this.ctx.fillStyle = "#000000";
+                 this.ctx.font = "bold 14px Arial";
+                 this.ctx.fillText(this.options.seriesName, this.canvas.width/2,this.canvas.height);
+                 this.ctx.restore();*/
 
                 //draw legend
                 barIndex = 0;
@@ -152,5 +152,11 @@ function check1() {
     }
 }
 
+function cleargraph(){
+    var myCanvas = document.getElementById("micanvas");
+    var ctx = myCanvas.getContext("2d");
+    myCanvas.width = 700;
+    myCanvas.height = 700;
+    cxt.clearRect(0, 0, canvas.width, canvas.height);
 
-
+}
