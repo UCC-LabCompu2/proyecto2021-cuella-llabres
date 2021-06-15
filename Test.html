@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css" type="text/css">
     <script type='text/javascript' src='misfunciones.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <header>
     <h1 id="Titulo_principal">CoronaData</h1>
@@ -82,10 +83,10 @@
             </p>
         </article>
         <article>
-            <div>
                 <h2>Test rápido</h2>
                 <ul>
-                    <li><input type="checkbox" id="Check1" name="button" value="Fiebre" onclick="check1()"> <label for="Check1"> ¿Tenes
+                    <li><input type="checkbox" id="Check1" name="button" value="Fiebre" onclick="check1()"> <label
+                            for="Check1"> ¿Tenes
                         fiebre?</label></li>
                     <li><input type="checkbox" id="Check2" name="button" value="Escalofrios"><label for="Check2">
                         ¿Tenes escalofrios?</label></li>
@@ -104,12 +105,8 @@
                     <li><input type="checkbox" id="Check9" name="button" value="Perdida"><label for="Check9">¿Tenes
                         pérdida súbita del sentido del olfato o gusto? </label></li>
                 </ul>
-            </div>
             <div>
                 <canvas id="micanvas"></canvas>
-                <canvas id="Canvas"></canvas>
-                <legend for="Canvas"></legend>
-                <script type="text/javascript" src="misfunciones.js"></script>
             </div>
         </article>
 
