@@ -7,13 +7,16 @@ function check1() {
     var valorm = document.getElementById("sintl").value;
     var ctx = myCanvas.getContext("2d");
 
-    if (valorg <= 0 || valorg >= 50) {
-        alert("Elija valores correctos de temperatura");
+    if (valorg <= 0 || valorg >= 4) {
+        alert("Elija valores solamente entre el 1 y el 3");
     }
-    if (val != 1 && val != 2 && val != 3 && val != 4 && val != 5 && val != 6 && val != 7 && val != 8 && val != 9) {
-        alert("Solo se permiten números o numeros entre el 1 y el 9");
+    if (val != 1 && val != 2 && val != 3) {
+        alert("Solo se permiten números entre el 1 y el 3");
     }
-    if (val >= 1 && val <= 9 && valorg >= 1 && valorg <= 49) {
+    if(valorm<=0 || valorm>=8){
+        alert("Solo se permiten números entre el 1 y el 7")
+    }
+    if (val >= 1 && val <= 3 && valorg >= 1 && valorg <= 3 && valorm >= 1 && valorm <=7) {
         function drawLine(ctx, startX, startY, endX, endY, color) {
             ctx.save();
             ctx.strokeStyle = color;
@@ -32,7 +35,7 @@ function check1() {
         }
 
         var myVinyls = {
-            "Riesgo promedio" : 14,
+            "Riesgo promedio" : 121,
             "Tu riesgo": val+valorg+valorm,
         };
 
@@ -159,5 +162,4 @@ function cleargraph() {
     myCanvas.width = 700;
     myCanvas.height = 700;
     cxt.clearRect(0, 0, canvas.width, canvas.height);
-
 }
