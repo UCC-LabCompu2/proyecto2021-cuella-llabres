@@ -1,3 +1,12 @@
+/**
+ * Dibuja el canvas y hace la validacion de los datos
+ * @method check1
+ * @param canvas
+ * @param valores inputs
+ * @return voidFunction
+ */
+let total = 0;
+
 function check1() {
     var myCanvas = document.getElementById("micanvas");
     myCanvas.width = 700;
@@ -13,10 +22,19 @@ function check1() {
     if (val != 1 && val != 2 && val != 3) {
         alert("Solo se permiten números entre el 1 y el 3");
     }
-    if(valorm<=0 || valorm>=8){
+    if (valorm <= 0 || valorm >= 8) {
         alert("Solo se permiten números entre el 1 y el 7")
     }
-    if (val >= 1 && val <= 3 && valorg >= 1 && valorg <= 3 && valorm >= 1 && valorm <=7) {
+    if (val >= 1 && val <= 3 && valorg >= 1 && valorg <= 3 && valorm >= 1 && valorm <= 7) {
+        /**
+         * Dibuja las lineas
+         * @param ctx referencia al contexto de dibujo
+         * @param startX la coordenada X del punto de inicio de la línea
+         * @param startY la coordenada Y del punto de inicio de la línea
+         * @param endX la coordenada X del punto final de la línea
+         * @param endY la coordenada Y del punto final de la línea
+         * @param color color que tendra la linea
+         */
         function drawLine(ctx, startX, startY, endX, endY, color) {
             ctx.save();
             ctx.strokeStyle = color;
@@ -27,6 +45,15 @@ function check1() {
             ctx.restore();
         }
 
+        /**
+         * Dibuja las barras
+         * @param ctx referencia al contexto de dibujo
+         * @param upperLeftCornerX la coordenada X de la esquina superior izquierda de la barra
+         * @param upperLeftCornerY la coordenada Y de la esquina superior izquierda de la barra
+         * @param width el ancho de la barra
+         * @param height la altura de la barra
+         * @param color el color de la barra
+         */
         function drawBar(ctx, upperLeftCornerX, upperLeftCornerY, width, height, color) {
             ctx.save();
             ctx.fillStyle = color;
@@ -34,11 +61,19 @@ function check1() {
             ctx.restore();
         }
 
+        /**
+         *
+         * @type {{"Riesgo promedio": number, "Tu riesgo": *}}
+         */
         var myVinyls = {
-            "Riesgo promedio" : 121,
-            "Tu riesgo": val+valorg+valorm,
+            "Riesgo promedio": 121,
+            "Tu riesgo": val + valorg + valorm,
         };
-
+        /**
+         *
+         * @param options
+         * @constructor
+         */
         var Barchart = function (options) {
             this.options = options;
             this.canvas = options.canvas;
@@ -123,7 +158,6 @@ function check1() {
             }
         }
 
-
         var myBarchart = new Barchart(
             {
                 canvas: micanvas,
@@ -135,6 +169,7 @@ function check1() {
                 colors: ["#a55ca5", "#67b6c7", "#bccd7a", "#eb9743"]
             }
         );
+
         var myBarchart = new Barchart(
             {
                 canvas: micanvas,
@@ -156,6 +191,12 @@ function check1() {
     }
 }
 
+/**
+ * Limpia el gráfico
+ * @method cleargraph
+ * @param canvas
+ * @return voidFunction
+ */
 function cleargraph() {
     var myCanvas = document.getElementById("micanvas");
     var ctx = myCanvas.getContext("2d");
