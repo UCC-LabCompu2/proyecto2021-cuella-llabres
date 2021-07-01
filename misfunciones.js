@@ -5,7 +5,7 @@
  * @param valores inputs
  * @return voidFunction
  */
-let total = 0;
+
 
 function check1() {
     var myCanvas = document.getElementById("micanvas");
@@ -196,11 +196,12 @@ function check1() {
  * @method cleargraph
  * @param canvas
  * @return voidFunction
+ * NO ANDA REVISAR
  */
 function cleargraph() {
     var myCanvas = document.getElementById("micanvas");
     var ctx = myCanvas.getContext("2d");
     myCanvas.width = 700;
     myCanvas.height = 700;
-    cxt.clearRect(0, 0, canvas.width, canvas.height);
+
 }
