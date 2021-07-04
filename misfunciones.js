@@ -199,9 +199,6 @@ function check1() {
  * NO ANDA REVISAR
  */
 function cleargraph() {
-    var myCanvas = document.getElementById("micanvas");
-    var ctx = myCanvas.getContext("2d");
-    myCanvas.width = 700;
-    myCanvas.height = 700;
-
+    var mycanvas = document.getElementById("micanvas");
+    var ctx = mycanvas.getContext("2d");
 }
