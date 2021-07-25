@@ -15,14 +15,16 @@ function check1() {
     var valorg = document.getElementById("grados").value;
     var valorm = document.getElementById("sintl").value;
     var ctx = myCanvas.getContext("2d");
+    var x = document.getElementById("sintg1").checked;
 
-    if (valorg != 1 && valorg != 2 && valorg != 3) {
+
+    if (valorg != 0 && valorg != 1 && valorg != 2 && valorg != 3) {
         alert("Elija valores solamente entre el 1 y el 3");
     }
-    if (val != 1 && val != 2 && val != 3) {
+    if (val != 0 && val != 1 && val != 2 && val != 3) {
         alert("Solo se permiten números entre el 1 y el 3");
     }
-    if (valorm != 1 && valorm != 2 && valorm != 3 && valorm != 4 && valorm != 5 && valorm != 6 && valorm != 7) {
+    if (valorm != 0 && valorm != 1 && valorm != 2 && valorm != 3 && valorm != 4 && valorm != 5 && valorm != 6 && valorm != 7) {
         alert("Solo se permiten números entre el 1 y el 7")
     }
     if (val >= 1 && val <= 3 && valorg >= 1 && valorg <= 3 && valorm >= 1 && valorm <= 7) {
@@ -196,7 +198,6 @@ function check1() {
  * @method cleargraph
  * @param canvas
  * @return voidFunction
- * NO ANDA REVISAR
  */
 function cleargraph() {
     var mycanvas = document.getElementById("micanvas");
