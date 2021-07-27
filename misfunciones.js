@@ -6,16 +6,30 @@
  * @return voidFunction
  */
 
+var myCanvas = document.getElementById("micanvas");
+myCanvas.width = 700;
+myCanvas.height = 700;
+var val = document.getElementById("cantidaddesintomasgraves").value;
+var valorg = document.getElementById("grados").value;
+var valorm = document.getElementById("sintl").value;
+var ctx = myCanvas.getContext("2d");
+var x = document.getElementById("sintg1").checked;
+
+var legend;
+var ul;
+var li;
+
+
 
 function check1() {
-    var myCanvas = document.getElementById("micanvas");
+    myCanvas = document.getElementById("micanvas");
     myCanvas.width = 700;
     myCanvas.height = 700;
-    var val = document.getElementById("cantidaddesintomasgraves").value;
-    var valorg = document.getElementById("grados").value;
-    var valorm = document.getElementById("sintl").value;
-    var ctx = myCanvas.getContext("2d");
-    var x = document.getElementById("sintg1").checked;
+    val = document.getElementById("cantidaddesintomasgraves").value;
+    valorg = document.getElementById("grados").value;
+    valorm = document.getElementById("sintl").value;
+    ctx = myCanvas.getContext("2d");
+    x = document.getElementById("sintg1").checked;
 
 
     if (valorg != 0 && valorg != 1 && valorg != 2 && valorg != 3) {
@@ -145,11 +159,15 @@ function check1() {
 
                 //draw legend
                 barIndex = 0;
-                var legend = document.querySelector("legend[for='micanvas']");
-                var ul = document.createElement("ul");
-                legend.append(ul);
+                legend = document.querySelector("legend[for='micanvas']");
+                ul = document.createElement("ul");
+                while( legend.firstChild ){
+                    legend.removeChild( legend.firstChild );
+                }
+
+
                 for (categ in this.options.data) {
-                    var li = document.createElement("li");
+                    li = document.createElement("li");
                     li.style.listStyle = "none";
                     li.style.borderLeft = "20px solid " + this.colors[barIndex % this.colors.length];
                     li.style.padding = "5px";
@@ -157,6 +175,7 @@ function check1() {
                     ul.append(li);
                     barIndex++;
                 }
+                legend.append(ul);
             }
         }
 
@@ -172,17 +191,9 @@ function check1() {
             }
         );
 
-        var myBarchart = new Barchart(
-            {
-                canvas: micanvas,
-                padding: 10,
-                gridScale: 5,
-                gridColor: "#eeeeee",
-                data: myVinyls,
-                colors: ["#a55ca5", "#67b6c7", "#bccd7a", "#eb9743"]
-            }
-        );
+
         myBarchart.draw();
+
         this.ctx.save();
         this.ctx.textBaseline = "bottom";
         this.ctx.textAlign = "center";
@@ -191,15 +202,4 @@ function check1() {
         this.ctx.fillText(this.options.seriesName, this.canvas.width / 2, this.canvas.height);
         this.ctx.restore();
     }
-}
-
-/**
- * Limpia el gráfico
- * @method cleargraph
- * @param canvas
- * @return voidFunction
- */
-function cleargraph() {
-    var mycanvas = document.getElementById("micanvas");
-    var ctx = mycanvas.getContext("2d");
 }
