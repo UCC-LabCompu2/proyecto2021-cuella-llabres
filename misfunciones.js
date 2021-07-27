@@ -5,31 +5,21 @@
  * @param valores inputs
  * @return voidFunction
  */
-
-var myCanvas = document.getElementById("micanvas");
-myCanvas.width = 700;
-myCanvas.height = 700;
-var val = document.getElementById("cantidaddesintomasgraves").value;
-var valorg = document.getElementById("grados").value;
-var valorm = document.getElementById("sintl").value;
-var ctx = myCanvas.getContext("2d");
-var x = document.getElementById("sintg1").checked;
-
-var legend;
-var ul;
-var li;
-
-
-
 function check1() {
-    myCanvas = document.getElementById("micanvas");
+    var myCanvas = document.getElementById("micanvas");
+    var val = document.getElementById("cantidaddesintomasgraves").value;
+    var valorg = document.getElementById("grados").value;
+    var valorm = document.getElementById("sintl").value;
+    var ctx = myCanvas.getContext("2d");
+    var x = document.getElementById("sintg1").checked;
     myCanvas.width = 700;
     myCanvas.height = 700;
-    val = document.getElementById("cantidaddesintomasgraves").value;
-    valorg = document.getElementById("grados").value;
-    valorm = document.getElementById("sintl").value;
-    ctx = myCanvas.getContext("2d");
-    x = document.getElementById("sintg1").checked;
+
+
+    var legend;
+    var ul;
+    var li;
+
 
 
     if (valorg != 0 && valorg != 1 && valorg != 2 && valorg != 3) {
@@ -52,7 +42,6 @@ function check1() {
          * @param color color que tendra la linea
          */
         function drawLine(ctx, startX, startY, endX, endY, color) {
-            ctx.save();
             ctx.strokeStyle = color;
             ctx.beginPath();
             ctx.moveTo(startX, startY);
@@ -194,12 +183,7 @@ function check1() {
 
         myBarchart.draw();
 
-        this.ctx.save();
-        this.ctx.textBaseline = "bottom";
-        this.ctx.textAlign = "center";
-        this.ctx.fillStyle = "#000000";
-        this.ctx.font = "bold 14px Arial";
-        this.ctx.fillText(this.options.seriesName, this.canvas.width / 2, this.canvas.height);
-        this.ctx.restore();
+
+
     }
 }
