@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css" type="text/css">
     <script type='text/javascript' src='misfunciones.js'></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <header>
     <h1 id="Titulo_principal">CoronaData</h1>
@@ -83,12 +83,12 @@
         <article>
             <h2>Test rápido</h2>
             <p>
-                Para esta parte te queremos ayudar con un pequeño test rápido que te ayudará a detectar tus chances de
+                Para esta parte te queremos ayudar con un pequeño test rápido que te ayudara a detectar tus chances de
                 estar o no
                 contagiado por este virus.
             </p>
             <p>
-            <form id="form">
+            <ul>
                 <h3>Síntomas más graves (riesgo alto y necesitan atención inmediata)</h3>
                 <li><input type="checkbox" id="sintg1" name="sintg1" value="respirar">
                     <label for="sintg1">Dificultad para respirar o sensación de falta de aire</label></li>
@@ -97,11 +97,11 @@
                 <li><input type="checkbox" id="sintg3" name="sintg3" value="respirar">
                     <label for="sintg3"> Incapacidad para hablar o moverse </label></li>
                 <h3>Síntomas más comunes (riesgo moderado)</h3>
-                <li><input type="checkbox" id="sintm1" name="sintm1" value="respirar">
+                <li> <input type="checkbox" id="sintm1" name="sintm1" value="respirar">
                     <label for="sintm1">Fiebre</label></li>
-                <li><input type="checkbox" id="sintm2" name="sintm2" value="respirar">
+                <li> <input type="checkbox" id="sintm2" name="sintm2" value="respirar">
                     <label for="sintm2">Tos</label></li>
-                <li><input type="checkbox" id="sintm3" name="sintm3" value="respirar">
+                <li> <input type="checkbox" id="sintm3" name="sintm3" value="respirar">
                     <label for="sintm3">Cansancio</label></li>
                 <h3>Síntomas menos comunes (riesgo leve)</h3>
                 <li><input type="checkbox" id="sintleve1" name="sintleve1" value="respirar">
@@ -117,10 +117,8 @@
                 <li><input type="checkbox" id="sintleve6" name="sintleve6" value="respirar">
                     <label for="sintleve6">Pérdida del sentido del olfato o del gusto</label></li>
                 <li><input type="checkbox" id="sintleve7" name="sintleve7" value="respirar">
-                    <label for="sintleve7">Erupciones cutáneas o pérdida del color en los dedos de las manos o de los
-                        pies</label></li>
-            </form>
-            </p>
+                    <label for="sintleve7">Erupciones cutáneas o pérdida del color en los dedos de las manos o de los pies</label></li>
+            </ul>
             <form>
                 <p>
                     <label for="cantidaddesintomasgraves"> Cantidad de síntomas graves</label> = <input
