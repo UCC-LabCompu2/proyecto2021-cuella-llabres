@@ -1,3 +1,17 @@
+function contar() {
+    var checkboxes = document.getElementById("form1").checkbox; //Array que contiene los checkbox
+
+    var cont = 0; //Variable que lleva la cuenta de los checkbox pulsados
+
+    for (var x=0; x < checkboxes.length; x++) {
+        if (checkboxes[x].checked) {
+            cont = cont + 1;
+        }
+    }
+    alert ("El número de checkbox pulsados es " + cont);
+    return cont;
+}
+
 /**
  * Dibuja el canvas y hace la validacion de los datos
  * @method check1
@@ -7,9 +21,9 @@
  */
 function check1() {
     var myCanvas = document.getElementById("micanvas");
-    var val = document.getElementById("cantidaddesintomasgraves").value;
-    var valorg = document.getElementById("grados").value;
-    var valorm = document.getElementById("sintl").value;
+    var valorgrave = 0;
+    var valormedio = 0;
+    var valorleve = 0;
     var ctx = myCanvas.getContext("2d");
     var x = document.getElementById("sintg1").checked;
     myCanvas.width = 700;
@@ -20,18 +34,38 @@ function check1() {
     var ul;
     var li;
 
+    var checkboxes = document.getElementById("form1").checkbox; //Array que contiene los checkbox
+
+    for (var x = 0; x < 3; x++) {
+        if (checkboxes[x].checked) {
+            valorgrave = valorgrave + 1;
+        }
+    }
+
+    for (var x = 3; x < 6; x++) {
+        if (checkboxes[x].checked) {
+            valormedio = valormedio + 1;
+        }
+    }
 
 
-    if (valorg != 0 && valorg != 1 && valorg != 2 && valorg != 3) {
+    for (var x = 6; x < 13; x++) {
+        if (checkboxes[x].checked) {
+            valorleve = valorleve + 1;
+        }
+    }
+
+
+    if (valormedio != 0 && valormedio != 1 && valormedio != 2 && valormedio != 3) {
         alert("Elija valores solamente entre el 1 y el 3");
     }
-    if (val != 0 && val != 1 && val != 2 && val != 3) {
+    if (valorgrave != 0 && valorgrave != 1 && valorgrave != 2 && valorgrave != 3) {
         alert("Solo se permiten números entre el 1 y el 3");
     }
-    if (valorm != 0 && valorm != 1 && valorm != 2 && valorm != 3 && valorm != 4 && valorm != 5 && valorm != 6 && valorm != 7) {
+    if (valorleve != 0 && valorleve != 1 && valorleve != 2 && valorleve != 3 && valorleve != 4 && valorleve != 5 && valorleve != 6 && valorleve != 7) {
         alert("Solo se permiten números entre el 1 y el 7")
     }
-    if (val >= 1 && val <= 3 && valorg >= 1 && valorg <= 3 && valorm >= 1 && valorm <= 7) {
+    if (valorgrave >= 0 && valorgrave <= 3 && valormedio >= 0 && valormedio <= 3 && valorleve >= 0 && valorleve <= 7) {
         /**
          * Dibuja las lineas
          * @param ctx referencia al contexto de dibujo
@@ -72,7 +106,7 @@ function check1() {
          */
         var myVinyls = {
             "Riesgo promedio": 121,
-            "Tu riesgo": val + valorg + valorm,
+            "Tu riesgo":"" + valorgrave + valormedio + valorleve,
         };
         /**
          *
@@ -182,8 +216,6 @@ function check1() {
 
 
         myBarchart.draw();
-
-
-
     }
+
 }
