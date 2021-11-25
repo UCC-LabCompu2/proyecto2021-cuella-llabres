@@ -1,17 +1,3 @@
-function contar() {
-    var checkboxes = document.getElementById("form1").checkbox; //Array que contiene los checkbox
-
-    var cont = 0; //Variable que lleva la cuenta de los checkbox pulsados
-
-    for (var x=0; x < checkboxes.length; x++) {
-        if (checkboxes[x].checked) {
-            cont = cont + 1;
-        }
-    }
-    alert ("El número de checkbox pulsados es " + cont);
-    return cont;
-}
-
 /**
  * Dibuja el canvas y hace la validacion de los datos
  * @method check1
@@ -19,6 +5,7 @@ function contar() {
  * @param valores inputs
  * @return voidFunction
  */
+
 function check1() {
     var myCanvas = document.getElementById("micanvas");
     var valorgrave = 0;
@@ -54,17 +41,7 @@ function check1() {
             valorleve = valorleve + 1;
         }
     }
-
-
-    if (valormedio != 0 && valormedio != 1 && valormedio != 2 && valormedio != 3) {
-        alert("Elija valores solamente entre el 1 y el 3");
-    }
-    if (valorgrave != 0 && valorgrave != 1 && valorgrave != 2 && valorgrave != 3) {
-        alert("Solo se permiten números entre el 1 y el 3");
-    }
-    if (valorleve != 0 && valorleve != 1 && valorleve != 2 && valorleve != 3 && valorleve != 4 && valorleve != 5 && valorleve != 6 && valorleve != 7) {
-        alert("Solo se permiten números entre el 1 y el 7")
-    }
+    //setInterval(()=>{
     if (valorgrave >= 0 && valorgrave <= 3 && valormedio >= 0 && valormedio <= 3 && valorleve >= 0 && valorleve <= 7) {
         /**
          * Dibuja las lineas
@@ -106,7 +83,7 @@ function check1() {
          */
         var myVinyls = {
             "Riesgo promedio": 121,
-            "Tu riesgo":"" + valorgrave + valormedio + valorleve,
+            "Tu riesgo": "" + valorgrave + valormedio + valorleve,
         };
         /**
          *
@@ -213,9 +190,11 @@ function check1() {
                 colors: ["#a55ca5", "#67b6c7", "#bccd7a", "#eb9743"]
             }
         );
-
+        requestAnimationFrame(check1);
 
         myBarchart.draw();
     }
-
+        //},10)
 }
+
+
