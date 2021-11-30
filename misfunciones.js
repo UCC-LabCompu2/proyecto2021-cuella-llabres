@@ -190,8 +190,7 @@ function check1() {
                 colors: ["#a55ca5", "#67b6c7", "#bccd7a", "#eb9743"]
             }
         );
-        //requestAnimationFrame(check1);
-window.webkitRequestAnimationFrame(check1);
+        requestAnimationFrame(check1);
         myBarchart.draw();
     }
 
