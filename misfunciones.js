@@ -161,8 +161,8 @@ function check1() {
                 barIndex = 0;
                 legend = document.querySelector("legend[for='micanvas']");
                 ul = document.createElement("ul");
-                while( legend.firstChild ){
-                    legend.removeChild( legend.firstChild );
+                while (legend.firstChild) {
+                    legend.removeChild(legend.firstChild);
                 }
 
 
