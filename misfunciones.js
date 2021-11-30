@@ -82,7 +82,7 @@ function check1() {
          * @type {{"Riesgo promedio": number, "Tu riesgo": *}}
          */
         var myVinyls = {
-            "Riesgo promedio": 121,
+            "Riesgo promedio": 12,
             "Tu riesgo": "" + valorgrave + valormedio + valorleve,
         };
         /**
